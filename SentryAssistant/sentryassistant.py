@@ -62,7 +62,7 @@ def sendEmail(receiverEmailAddress, emailContent):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('your_email_address', 'your_password')
+    server.login('your_email_address', 'your_password') # your_email_address means the Email address of the sender and your_password means the password of the sender's Email account
     server.sendmail('your_email_address',
                     receiverEmailAddress, emailContent)
     server.close()
